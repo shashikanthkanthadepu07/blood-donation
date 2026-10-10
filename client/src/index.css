@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-slate-800 bg-slate-50 antialiased;
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Custom pulsing badge */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.5s infinite ease-in-out;
+}
