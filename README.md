@@ -43,7 +43,9 @@
 
 ```
 blood-donation-system/
-├── api/                             # Serverless Express API (Vercel Functions)
+├── api/
+│   └── index.js                     # Single Vercel serverless entrypoint
+├── backend/                         # Express API implementation
 │   ├── config/
 │   │   └── db.js                    # Cached Mongoose connection + In-Memory fallback
 │   ├── controllers/
